@@ -1,46 +1,41 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://www.apple.com/v/macbook-air-m1/e/images/meta/macbook-air_overview__15sjf4iagj6q_og.png');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-</head>
-<body>
+	<head>
+		<style>
+			body,h1 {font-family: "Raleway", sans-serif}
+			body, html {height: 100%}
+			.bgimg {
+			  background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/0*SSrDES_NaKGL6tGc');
+			  min-height: 100%;
+			  background-position: center;
+			  background-size: cover;
+			}
+			</style>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">4 days left</p>
-    <div id="getting-started"></div>
-<script type="text/javascript">
-  $("#getting-started")
-  .countdown("2017/01/01", function(event) {
-    $(this).text(
-      event.strftime('%D days %H:%M:%S')
-    );
-  });
-</script>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
 
-</body>
+		<title>ĐẾM NGÀY MUA MACBOOK</title>
+		<meta name="viewport" content="width=960">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/flipclock.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+		<link href="img/favicon.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="clock animated flipInX"></div>
+		</div>
+		<canvas id="confetti"></canvas>
+		<div style="" class="message">ĐẾM NGÀY MUA MACBOOK<br><image src="https://2010.fossasia.org/sites/default/files/fever_logo.png" /></div>
+		<div class="bg"></div>
+		
+		<div class="stars"></div>
+		<!-- <div class="twinkling"></div> -->
+		<div class="clouds"></div>
+		
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="js/flipclock.js"></script>
+		<script src="js/newyear.js"></script>
+	</body>
 </html>
