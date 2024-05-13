@@ -125,7 +125,9 @@ var interval = 10000;
 
 $(document).ready(function() {
 	var currentDate = new Date();
-	var futureDate  = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 3,19.30);
+	var futureDate  = new Date(currentDate.getFullYear(), 4, 15, 19, 30);
+	console.log('currentDate.getFullYear()',currentDate.getFullYear())
+	console.log('currentDate.getFullYear()',currentDate.getMonth())
 	
 	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
